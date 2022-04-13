@@ -1,5 +1,5 @@
 import axios from "axios"
-const URL = 'http://localhost:3001/blogs/'
+const URL = 'https://mrblogapi.herokuapp.com/blogs/'
 
 export const getBlogs = () => {
     const response = axios.get(URL)
