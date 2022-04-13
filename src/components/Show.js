@@ -33,7 +33,7 @@ function Show() {
 console.log(comments)
   return (
     <div> 
-      <div className="blog">
+      <div className="show">
         <h2>{blog.title}</h2><br />
         <h3>{blog.body}</h3>
         <button onClick={() => {navigate(`/${id}/Edit`)}}>Edit Blog</button>
@@ -42,9 +42,9 @@ console.log(comments)
       {
           comments.map((comment, i)=>{
             return(
-            <div key = {i}>
-                <h4>{comment.name}</h4>
-                <h5>{comment.message}</h5>
+            <div className="comments" key = {i}>
+                <h3>{comment.name}</h3>
+                <h4>{comment.message}</h4>
             </div>
           )
       })}

@@ -16,7 +16,8 @@ function Blogs() {
                     return(
                         <a href={`/${blog._id}`}>
                             <div className="blog" key = {i}>
-                            {blog.title}
+                            <h3>{blog.title}</h3>
+                            {blog.body}
                             </div>
                         </a>
                     )

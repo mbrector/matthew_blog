@@ -1,5 +1,41 @@
-/* white-space: normal; 
-  width: 150px; 
-  overflow: hidden;
-  text-overflow: ellipsis; */
+html{
+  background-color:darkturquoise;
+  text-align: center;
+}
 
+.blogs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.blog{
+  border: solid 5px #02ffdd;
+  background-color: #959595;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  width: 80%;
+  height: 20vh;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+a, h1, h2, h3{
+  color: #353535;
+}
+
+.comments{
+  background-color: #959595;
+  border: solid 5px #02ffdd;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 25%;
+}
+
+.show{
+  border: solid 5px #02ffdd;
+  background-color: #959595;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 20px;
+}
