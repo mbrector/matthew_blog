@@ -10,11 +10,11 @@ function App() {
     <div className="App">
      <Router>
        <nav>
-         <Link to='/'>Home</Link><br />
+         <Link to='/blog'>Home</Link><br />
          <Link to='/new'>Add Blog Post</Link>
        </nav>
       <Routes>
-        <Route path='/' element={<Index />} />
+        <Route path='/blog' element={<Index />} />
         <Route path='/new' element={<New />} />
         <Route path='/:id' element={<Show />} />
         <Route path='/:id/edit' element={<Edit />} />
